@@ -13,3 +13,6 @@ vim.keymap.set("n", "<Leader>ff", tele_builtin.find_files)
 vim.keymap.set("n", "<Leader>fg", tele_builtin.live_grep)
 vim.keymap.set("n", "<Leader>fb", tele_builtin.buffers)
 vim.keymap.set("n", "<Leader>fh", tele_builtin.help_tags)
+
+local function toggleCopilot() vim.cmd("Copilot toggle") end
+vim.keymap.set("n", "<Leader>ct", toggleCopilot)
