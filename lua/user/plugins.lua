@@ -63,5 +63,12 @@ return {
 		config = function ()
 			require("copilot_cmp").setup()
 		end
+	},
+
+	{
+		"windwp/nvim-autopairs",
+		config = function()
+			require("nvim-autopairs").setup()
+		end
 	}
 }
