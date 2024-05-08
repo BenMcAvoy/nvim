@@ -92,5 +92,10 @@ return {
 	{ "AndreM222/copilot-lualine" },
 
 	-- Terminal --
-	{ "akinsho/toggleterm.nvim", config = true }
+	{ "akinsho/toggleterm.nvim", config = true },
+
+	--- Markdown suppor ---
+	"mzlogin/vim-markdown-toc",
+	"ixru/nvim-markdown",
+	"godlygeek/tabular",
 }
