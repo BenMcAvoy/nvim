@@ -2,8 +2,8 @@ return {
 	-- Colour scheme
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
-	-- Whitespace
-	"johnfrankmorgan/whitespace.nvim",
+	-- Whitespace management
+	"ntpeters/vim-better-whitespace",
 
 	-- File tree
 	"nvim-tree/nvim-tree.lua",
@@ -89,5 +89,8 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" }
 	},
 
-	{ "AndreM222/copilot-lualine" }
+	{ "AndreM222/copilot-lualine" },
+
+	-- Terminal --
+	{ "akinsho/toggleterm.nvim", config = true }
 }
