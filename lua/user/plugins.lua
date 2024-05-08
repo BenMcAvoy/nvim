@@ -75,5 +75,12 @@ return {
 		config = function()
 			require("nvim-autopairs").setup()
 		end
-	}
+	},
+
+	{
+		'goolord/alpha-nvim',
+		config = function ()
+			require'alpha'.setup(require'alpha.themes.dashboard'.config)
+		end
+	};
 }
