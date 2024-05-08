@@ -28,12 +28,15 @@ vim.o.guifont = "JetBrainsMono Nerd Font Mono:h12"
 vim.opt.clipboard = "unnamedplus"
 vim.opt.termguicolors = true
 
+-- Line colour --
+vim.opt.cursorline = true
+
 -- Spellcheck and line wrapping for text files --
 vim.cmd([[
 augroup MarkupFiles
-  autocmd!
-	autocmd FileType markdown,txt,tex,type setlocal spelllang=en_gb,es
-  autocmd FileType markdown,txt,tex,typ setlocal spell wrap linebreak
+autocmd!
+autocmd FileType markdown,txt,tex,type setlocal spelllang=en_gb,es
+autocmd FileType markdown,txt,tex,typ setlocal spell wrap linebreak
 augroup END
 ]])
 
