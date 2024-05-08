@@ -94,8 +94,11 @@ return {
 	-- Terminal --
 	{ "akinsho/toggleterm.nvim", config = true },
 
-	--- Markdown suppor ---
+	-- Markdown support --
 	"mzlogin/vim-markdown-toc",
 	"ixru/nvim-markdown",
 	"godlygeek/tabular",
+
+	-- Lua Configuration --
+	{ "folke/neodev.nvim", opts = {} }
 }
