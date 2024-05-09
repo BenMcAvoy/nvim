@@ -1,3 +1,11 @@
+-- Sensible defaults --
+vim.cmd("runtime! macros/matchit.vim")
+vim.opt.backspace = "indent,eol,start"
+vim.opt.incsearch = true
+vim.opt.listchars = "tab:»·,trail:·,nbsp:·"
+vim.opt.scroll = 3
+vim.opt.autoread = true
+
 --- Line number settings ---
 vim.opt.relativenumber = true
 vim.opt.number = true
