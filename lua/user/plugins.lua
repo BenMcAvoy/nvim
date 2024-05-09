@@ -2,9 +2,6 @@ return {
 	-- Colour scheme
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
-	-- Whitespace management
-	"ntpeters/vim-better-whitespace",
-
 	-- File tree
 	"nvim-tree/nvim-tree.lua",
 
@@ -22,6 +19,8 @@ return {
 			})
 		end,
 	},
+
+	{ 'wakatime/vim-wakatime', lazy = false },
 
 	-- Git integration --
 	"lewis6991/gitsigns.nvim",
