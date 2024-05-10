@@ -2,14 +2,19 @@ require("nvim-tree").setup({
 	sort = {
 		sorter = "case_sensitive",
 	},
+
 	view = {
 		width = 30,
 	},
+
 	renderer = {
-		group_empty = true,
+		highlight_git = true, -- highlight git status for files
+		group_empty = true, -- group empty folders into one node
 	},
+
 	filters = {
-		dotfiles = true,
+		dotfiles = false,
+		git_ignored = false,
 	},
 })
 
