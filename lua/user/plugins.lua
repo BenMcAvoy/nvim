@@ -26,6 +26,10 @@ return {
 	"lewis6991/gitsigns.nvim",
 	"kdheepak/lazygit.nvim",
 
+	-- Commenting support
+	{ "folke/todo-comments.nvim", opts = {} },
+	"tpope/vim-commentary",
+
 	-- Find --
 	{
 		"nvim-telescope/telescope.nvim", tag = "0.1.6",
