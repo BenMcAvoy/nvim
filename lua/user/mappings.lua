@@ -32,3 +32,5 @@ vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 -- TT to toggle terminal
 vim.keymap.set("n", "<Leader>tt", vim.cmd.ToggleTerm)
 
+-- Renaming support --
+vim.keymap.set("n", "<leader>rn", ":IncRename ")

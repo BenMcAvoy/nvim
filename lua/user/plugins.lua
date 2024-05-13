@@ -41,10 +41,23 @@ return {
 		dependencies = { "nvim-lua/plenary.nvim" }
 	},
 
+	-- UI messaging replacement --
+	{
+		"folke/noice.nvim",
+		event = "VeryLazy",
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+			"rcarriga/nvim-notify",
+		}
+	},
+
 	-- LSP Support
 	"neovim/nvim-lspconfig",
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
+
+	-- Renaming
+	"smjonas/inc-rename.nvim",
 
 	-- Autocompletion
 	"hrsh7th/nvim-cmp",
@@ -93,8 +106,8 @@ return {
 	},
 
 	{
-    "nvim-lualine/lualine.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" }
+		"nvim-lualine/lualine.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" }
 	},
 
 	{ "AndreM222/copilot-lualine" },
