@@ -22,6 +22,11 @@ return {
 
 	{ 'wakatime/vim-wakatime', lazy = false },
 
+	-- Debugging --
+	"mfussenegger/nvim-dap",
+	"rcarriga/nvim-dap-ui",
+	{ "rcarriga/nvim-dap-ui", dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} },
+
 	-- Git integration --
 	"lewis6991/gitsigns.nvim",
 	"kdheepak/lazygit.nvim",
