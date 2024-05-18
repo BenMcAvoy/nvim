@@ -23,7 +23,7 @@ vim.g.loaded_netrwPlugin = 1
 --vim.g.loaded_netrw = 1
 
 --- History settings ---
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undodir = vim.fn.expand("~/.vim/undodir")
 vim.opt.undofile = true
 vim.opt.swapfile = false
 
